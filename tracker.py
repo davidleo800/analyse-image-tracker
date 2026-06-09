@@ -300,8 +300,11 @@ class Overlay(QWidget):
 
         self.setMouseTracking(True)
 
+        # self.setCursor(
+        #     Qt.CursorShape.CrossCursor
+        # )
         self.setCursor(
-            Qt.CursorShape.CrossCursor
+            Qt.CursorShape.ArrowCursor
         )
 
         self.showFullScreen()
@@ -326,7 +329,7 @@ class Overlay(QWidget):
         painter = QPainter(self)
 
         pen = QPen(
-            QColor(255, 255, 255, 180),
+            QColor(255, 255, 255, 20),
             2
         )
 
